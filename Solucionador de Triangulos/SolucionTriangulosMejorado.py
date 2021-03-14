@@ -26,6 +26,12 @@ imagen1 = PhotoImage(file="triangulo.png")
 imagen2 = PhotoImage(file="logo.png")
 Triangulo = Label(p1,image=imagen1).place(x=0, y=5)
 Triangulo2 = Label(p2,image=imagen1).place(x=0, y=5)
+
+frame3=Frame(p0)
+frame3.place(x=35,y=405)
+copyright_XD=Label(frame3)
+copyright_XD.pack()
+copyright_XD.config(text="Proyecto realizado por Gustavo Laverde",font="Arial 10")
 ##____________________________________________________ASPECTO EXTERNO____________________________________________________##
 ##_________________________________________________INTERFAZ DE COMIENZO__________________________________________________##
 

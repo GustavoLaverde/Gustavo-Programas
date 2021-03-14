@@ -6,13 +6,18 @@ from tkinter import messagebox
 ##__________________________________________GRANDES RASGOS___________________________________________##
 root = Tk()
 root.title("BLACKJACK")
-root.geometry("500x300") ## Dandole las dimensiones a la ventana
+root.geometry("500x330") ## Dandole las dimensiones a la ventana
 root.iconbitmap("carta.ico")
 root.resizable(0,0)
 root.config(background="skyblue")
 imagen1 = PhotoImage(file="plantarse.png")
 imagen2 = PhotoImage(file="pedir.png")
 imagen3 = PhotoImage(file="comenzar.png")
+frame3=Frame(root)
+frame3.place(x=260,y=310)
+copyright_XD=Label(frame3)
+copyright_XD.pack()
+copyright_XD.config(text="Proyecto realizado por Gustavo Laverde",font="Arial 10",background="skyblue")
 ##___________________________________________________________________________________________________##
 ##_______________________________________CREACION DE LA BARAJA_______________________________________##
 palos= ["\u2660","\u2665","\u2666","\u2663"]
